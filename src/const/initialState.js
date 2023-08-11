@@ -77,23 +77,81 @@ export const initialStateWold = [
   },
   {
     id: nanoid(),
-    position: [40, 7, 11],
-    texture: logTexture
+    position: [45, 7, 11],
+    texture: woodTexture
   },
   {
     id: nanoid(),
-    position: [41, 7, 11],
-    texture: logTexture
+    position: [45, 7, 0],
+    texture: woodTexture
   },
   {
     id: nanoid(),
-    position: [40, 7, 10],
-    texture: logTexture
+    position: [35, 7, -3],
+    texture: woodTexture
   },
   {
     id: nanoid(),
-    position: [41, 7, 10],
-    texture: logTexture
+    position: [35, 10, -5],
+    texture: woodTexture
+  },
+  {
+    id: nanoid(),
+    position: [32, 10, -15],
+    texture: woodTexture
+  },
+  {
+    id: nanoid(),
+    position: [32, 11, -27],
+    texture: woodTexture
+  },
+
+  {
+    id: nanoid(),
+    position: [21, 12, -26],
+    texture: glassTexture
+  },
+  {
+    id: nanoid(),
+    position: [21, 12, -27],
+    texture: glassTexture
+  },
+  {
+    id: nanoid(),
+    position: [21, 12, -28],
+    texture: glassTexture
+  },
+
+  {
+    id: nanoid(),
+    position: [20, 12, -26],
+    texture: glassTexture
+  },
+  {
+    id: nanoid(),
+    position: [20, 12, -27],
+    texture: glassTexture
+  },
+  {
+    id: nanoid(),
+    position: [20, 12, -28],
+    texture: glassTexture
+  },
+
+  {
+    id: nanoid(),
+    position: [19, 12, -26],
+    texture: glassTexture
+  },
+  {
+    id: nanoid(),
+    position: [19, 12, -27],
+    texture: glassTexture
+  },
+  {
+    id: nanoid(),
+    position: [19, 12, -28],
+    texture: glassTexture
   }
 ]
 

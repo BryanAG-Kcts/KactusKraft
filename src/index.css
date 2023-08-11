@@ -20,30 +20,22 @@ body {
   font-size: 40px;
   font-weight: bold;
   color: white;
-  opacity: .3;
+  opacity: 0.3;
 }
 
-.modalTexturesContainer {
+.modalTextures {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  GAP: 40px;
+  gap: 40px;
   font-size: 20px;
   padding: 20px;
   background-color: #bbb;
-}
-
-.modalTextures {
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  
 }
 
 .modalImgContainer img {
@@ -52,11 +44,13 @@ body {
   border: 3px solid black;
   width: 100px;
   height: auto;
+  image-rendering: pixelated;
 }
 
 .modalImgContainer {
   display: flex;
-  background: #ededed ;
+  position: relative;
+  background: #ededed;
   padding: 10px;
   border-radius: 10px;
   flex-direction: column;
@@ -66,4 +60,7 @@ body {
 
 .modalImgContainer p {
   font-weight: bold;
+  position: absolute;
+  top: -15px;
+  right: -5px;
 }

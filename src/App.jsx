@@ -19,7 +19,7 @@ function App () {
         <Pov />
         <SelectMaterial changeMaterial={changeMaterial} visibleMenuMaterial={visibleMenuMaterial} toggleModal={toggleModal} />
         <Physics>
-          <Cubes boxesGame={boxesGame} removeCube={removeCube} />
+          <Cubes addCube={addCube} boxesGame={boxesGame} removeCube={removeCube} />
           <Ground addCube={addCube} />
           <Player />
         </Physics>
