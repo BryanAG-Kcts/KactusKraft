@@ -1,16 +1,53 @@
 import { nanoid } from 'nanoid'
 import {
-//   grassTexture,
+  grassImg,
+  dirtImg,
+  logImg,
+  glassImg,
+  woodImg,
+
+  grassTexture,
   dirtTexture,
   logTexture,
-  //   glassTexture,
+  glassTexture,
   woodTexture
 } from '../assets/textures'
+
+export const texturesList = [
+  grassTexture,
+  dirtTexture,
+  logTexture,
+  glassTexture,
+  woodTexture
+]
+
+export const previewTextures = [
+  {
+    src: grassImg,
+    name: 'Césped'
+  },
+  {
+    src: dirtImg,
+    name: 'Tierra'
+  },
+  {
+    src: logImg,
+    name: 'Tronco'
+  },
+  {
+    src: glassImg,
+    name: 'Vidrio'
+  },
+  {
+    src: woodImg,
+    name: 'Madera'
+  }
+]
 
 export const initialStateWold = [
   {
     id: nanoid(),
-    position: [1, 1, 1],
+    position: [1, 0, 1],
     texture: logTexture
   },
   {
@@ -40,23 +77,23 @@ export const initialStateWold = [
   },
   {
     id: nanoid(),
-    position: [40, 6, 10],
-    texture: woodTexture
+    position: [40, 7, 11],
+    texture: logTexture
   },
   {
     id: nanoid(),
-    position: [41, 6, 10],
-    texture: woodTexture
+    position: [41, 7, 11],
+    texture: logTexture
   },
   {
     id: nanoid(),
     position: [40, 7, 10],
-    texture: woodTexture
+    texture: logTexture
   },
   {
     id: nanoid(),
     position: [41, 7, 10],
-    texture: woodTexture
+    texture: logTexture
   }
 ]
 

@@ -6,22 +6,26 @@ import { Pov } from './components/POV'
 import { Player } from './components/player'
 import { useStoreGame } from './hooks/store'
 import { Cubes } from './components/cubes'
+import { SelectMaterial } from './components/selectMaterial'
+import { ModalMaterial } from './components/modalMaterial'
 
 function App () {
-  const { addCube, boxesGame } = useStoreGame()
+  const { boxesGame, visibleMenuMaterial, addCube, removeCube, changeMaterial, toggleModal } = useStoreGame()
   return (
     <>
       <Canvas>
         <Sky />
         <ambientLight intensity={1} />
         <Pov />
+        <SelectMaterial changeMaterial={changeMaterial} visibleMenuMaterial={visibleMenuMaterial} toggleModal={toggleModal} />
         <Physics>
-          <Cubes boxesGame={boxesGame} />
+          <Cubes boxesGame={boxesGame} removeCube={removeCube} />
           <Ground addCube={addCube} />
           <Player />
         </Physics>
       </Canvas>
       <span className='pointerInGame'>+</span>
+      <ModalMaterial visibleMenuMaterial={visibleMenuMaterial} />
     </>
   )
 }

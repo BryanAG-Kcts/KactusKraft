@@ -5,6 +5,7 @@ import { nanoid } from 'nanoid'
 export const useStoreGame = () => {
   const [boxesGame, setBoxesGame] = useState(initialStateWold)
   const selectMaterial = useRef(initialMaterial)
+  const [visibleMenuMaterial, setVisibleMenuMaterial] = useState(false)
 
   const addCube = (x, y, z) => {
     const newCube = {
@@ -16,12 +17,25 @@ export const useStoreGame = () => {
     const newCubes = [...boxesGame, newCube]
 
     setBoxesGame(newCubes)
+  }
 
-    console.log(boxesGame)
+  const removeCube = (x, y, z) => {
+    const newCube = boxesGame.filter(box => box.position[0] !== x || box.position[1] !== y || box.position[2] !== z)
+
+    setBoxesGame(newCube)
+  }
+
+  const changeMaterial = material => (selectMaterial.current = material)
+  const toggleModal = () => {
+    setVisibleMenuMaterial(!visibleMenuMaterial)
   }
 
   return {
     boxesGame,
-    addCube
+    visibleMenuMaterial,
+    addCube,
+    removeCube,
+    changeMaterial,
+    toggleModal
   }
 }

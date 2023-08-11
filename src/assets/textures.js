@@ -29,6 +29,11 @@ magFilterReafactory(glassTexture)
 magFilterReafactory(woodTexture)
 
 export {
+  grassImg,
+  dirtImg,
+  logImg,
+  glassImg,
+  woodImg,
   groundTexture,
   grassTexture,
   dirtTexture,
